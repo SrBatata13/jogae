@@ -1,0 +1,58 @@
+#ranking-geral {
+  max-height: 50%; /* ou ajuste conforme o layout */
+  overflow-y: auto;
+  padding-right: 5px; /* evita que a barra esconda conteúdo */
+}
+
+/* Se quiser estilizar a scrollbar (opcional e bonitinho) */
+#ranking-geral::-webkit-scrollbar {
+  width: 6px;
+}
+
+#ranking-geral::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+#ranking-geral {
+  margin-top: 0;
+  padding: 0px;
+}
+
+.jogador-ranking {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background-color: #38bdfb;
+  border-radius: 25px;
+  padding: 8px 10px;
+  margin: 0 10px 0 0;
+}
+
+
+.jogador-ranking img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: azure;
+  border: 2px solid white;
+  flex-shrink: 0; /* <- garante que a imagem não deforme */
+  display: block;
+}
+
+.jogador-ranking .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.jogador-ranking .nome {
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.jogador-ranking .pontos {
+  font-size: 11px;
+}
+

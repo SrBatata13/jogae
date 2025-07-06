@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/tela-jogo-oficial.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#coroa{
+  position: absolute;
+  top: -70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 40px;
+  z-index: 10;
+}
+/*colocação*/
+.podio{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    height: 240px;
+    margin-top: 14px;
+}
+.colocação{
+    width: 100px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+
+}
+.avatar img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(244, 240, 240);
+}
+.avatar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid rgba(251, 249, 249, 0.896);
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 1;
+  pointer-events: none;
+}
+.primeiro .avatar {
+  box-shadow: 0 0 20px 6px rgba(255, 204, 0, 0.5);
+}
+.primeiro{
+  position: relative;
+}
+.base{
+    background-color: #38bdfb;
+    border-radius: 8px 8px 0 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+}
+.primeiro .base{height: 140px;}
+.segundo .base{height: 100px; background-color: #38bdfb;}
+.terceiro .base{height: 80px;background-color: #38bdfb;}
+
+.nome{
+    font-size: 15px;
+}
+
+.pontos{
+    font-size: 15px;
+}
+
+
+/* tempo */
+#timer{
+    padding: 20px 54px;
+    background-color: #0A6d92;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    margin: 7px;
+    height: 240;
+    color: whitesmoke;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*conteudo*/
+.layout{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+main{
+    width: 250px;
+    height: 290px;
+    background-color: #38bdfb;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: center;
+}
+.area-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    flex: 1;
+    margin: 0%;
+}
+#loading {
+   display: block;
+ }
+
+ #desafioContainer {
+            display: none;
+        }
+ 
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+#desafioContainer > h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+p{
+    font-size: 20px;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+.botoes button {
+    padding: 13px 34px;
+    font-size: 14px;
+    background-color: #0A6d92;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+button {
+    background-color: #0ea5e9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+button:active {
+    box-shadow: 0 0 10px 3px #38bdfb;
+    background-color: #38bdfb;
+}
+
+.sua_pontuação{
+    background-color: #0A6d92;
+    color: #000;
+    border-radius: 10%;
+    margin: 10px;
+    width: 230px;
+    height: 80px;
+    text-align: center;
+}
+
+.sua_pontuação>h1{
+    font-size: 20px;
+}
+
+.sua_pontuação>h2{
+    font-size: 20px;
+}

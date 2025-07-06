@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rankingGeral.css">
+    <title>game</title>
+</head>
+<body>
+    <div>
+        <div class="podio">
+            <div class="colocação segundo">
+                <div class="avatar">
+                    <img src="../imagens/icon-pessoa.png" alt="segundo_lugar">
+                </div>
+                <div class="base">
+                    <div class="nome">jogador 2</div>
+                    <div class="pontos">1500 pts</div>
+                </div>
+            </div>
+            
+             <div class="colocação primeiro">
+                <div><img src="../imagens/coroa2.webp" alt="coroa" id="coroa"></div>
+                <div class="avatar">
+                    <img src="../imagens/icon-pessoa.png" alt="primeiro_lugar">
+                </div>
+                <div class="base">
+                    <div class="nome">jogador 1</div>
+                    <div class="pontos">1900 pts</div>
+                </div>
+            </div>
+
+             <div class="colocação terceiro">
+                <div class="avatar">
+                    <img src="../imagens/icon-pessoa.png" alt="terceiro_lugar">
+                </div>
+                <div class="base">
+                    <div class="nome">jogador 3</div>
+                    <div class="pontos">1000 pts</div>
+                </div>
+            </div>
+        </div>
+        <div id="timer">00:00:00
+        </div>
+       <div class="layout">
+               <nav>
+                    <div id="ranking-geral"></div>
+                </nav>
+            <div class="area-direita">
+                <main>
+                    <h1>SEU DESAFIO É:</h1>
+
+                      <div id="loading">
+
+                        <img src="../imagens/load.webp" alt="carregando..." width="150">
+
+                        <h1>carregando...</h1>
+
+                    </div>
+
+                    <div id="desafioContainer">
+
+                        <p class="desafio" id="desafioTexto">
+                        </p>
+                        <h2 id="valorPonto">0pts</h2>
+                    </div>
+                </main>
+
+                <div class="botoes">
+                    <button id="botaoFeito" onclick="marcarDesafioComoFeito()">
+                        FEITO 😁
+
+                    </button>
+                    <button id="botaoRecusar" onclick="recusarDesafio()" >
+                        RECUSAR
+                    </button>
+                </div>
+
+                <div class="sua_pontuação">
+                    <h1>SUA PONTUAÇÃO:</h1>
+                    <h2 id="pontuacao">0 pts</h2>
+                </div>
+            </div>
+       </div>
+    </div>
+    <script type="module" src="cronometro.js"></script>
+    <script type="module" src="ranking.js"></script>
+</body>
+</html>
