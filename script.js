@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Redirecionamento imediato se player já estiver cadastrado
 const playerId = localStorage.getItem('player_id');
 if (playerId) {
-  window.location.href = 'jogae/game/game.html';
+  window.location.href = 'game/game.html';
 }
 
   // Função para atualizar a foto de perfil
@@ -98,8 +98,8 @@ if (playerId) {
       localStorage.setItem('player_id', insertData[0].id);
 
       // 6. Redirecionar para a próxima página (jogo)
-      history.replaceState(null, null, 'jogae/game/game.html'); // Remove cadastro da pilha
-      window.location.href = 'jogae/game/game.html';
+      history.replaceState(null, null, 'game/game.html'); // Remove cadastro da pilha
+      window.location.href = 'game/game.html';
     } else {
       event.preventDefault(); // Impede o redirecionamento se as condições não forem atendidas
       alert('Por favor, preencha o nome e carregue uma foto de perfil.');
