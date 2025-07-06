@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Redirecionamento imediato se player já estiver cadastrado
 const playerId = localStorage.getItem('player_id');
 if (playerId) {
-  window.location.href = '/game/game.html';
+  window.location.href = 'jogae/game/game.html';
 }
 
   // Função para atualizar a foto de perfil
