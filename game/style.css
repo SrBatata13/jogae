@@ -2,14 +2,13 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(../imagens/tela-jogo-oficial.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100dvh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    overflow-y: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -120,10 +119,10 @@ body{
 }
 /*conteudo*/
 .layout{
-    display: flex;
-    height: 100vh;
+    display:flex ;
+    height: 65%;
+    margin: 0;
 }
-
 
 
 main{
